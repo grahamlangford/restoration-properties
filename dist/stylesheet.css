@@ -1,0 +1,35 @@
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.container {
+  min-height: calc(100vh - 70px);
+}
+
+.text-primary {
+  color: #1588ff !important;
+}
+
+.btn-primary {
+  background-color: #1588ff !important;
+  border-color: #1588ff !important;
+}
+
+img.flip {
+  -moz-transform: scaleX(-1); /* Gecko */
+  -o-transform: scaleX(-1); /* Opera */
+  -webkit-transform: scaleX(-1); /* Webkit */
+  transform: scaleX(-1); /* Standard */
+
+  filter: FlipH; /* IE 6/7/8 */
+}
+
+.footer {
+  height: 50px;
+}
