@@ -1,5 +1,6 @@
 h1 {
   text-transform: uppercase;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -9,7 +10,7 @@ h2 {
 }
 
 .container {
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px - 3rem);
 }
 
 .text-primary {
@@ -18,6 +19,10 @@ h2 {
 
 .btn-primary {
   background-color: #1588ff !important;
+  border-color: #1588ff !important;
+}
+
+.border-primary {
   border-color: #1588ff !important;
 }
 
@@ -31,5 +36,5 @@ img.flip {
 }
 
 .footer {
-  height: 50px;
+  height: 40px;
 }
