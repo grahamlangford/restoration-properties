@@ -3,16 +3,18 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Merriweather", serif;
+h6,
+button {
+  font-family: "Roboto", sans-serif;
 }
 
 p,
 label,
 input,
-button,
+select,
+option,
 div {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 h1 {
@@ -32,6 +34,10 @@ h2 {
 
 .text-primary {
   color: #1588ff !important;
+}
+
+.text-primary-dark {
+  color: #005ccb;
 }
 
 .btn-primary {
