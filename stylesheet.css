@@ -48,8 +48,8 @@ button > strong {
   color: #1588ff !important;
 }
 
-.text-primary-light {
-  color: #6db7ff;
+.bg-secondary {
+  background-color: #545f66 !important;
 }
 
 .btn {
