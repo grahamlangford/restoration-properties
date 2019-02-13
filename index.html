@@ -180,7 +180,10 @@
                 <div class="form-group col-md-2">
                   <label for="inputZip">Zip*</label>
                   <input
-                    type="number"
+                    type="tel"
+                    pattern="[0-9]*"
+                    oninvalid="this.setCustomValidity('Please enter a valid zip code')"
+                    oninput="setCustomValidity('')"
                     class="form-control"
                     id="inputZip"
                     name="zip"
@@ -245,7 +248,10 @@
                     <div class="input-group-text">$</div>
                   </div>
                   <input
-                    type="number"
+                    type="tel"
+                    pattern="^\$?(\d+|\d{1,3}(,\d{3})*)(\.\d{2})?$"
+                    oninvalid="this.setCustomValidity('Please enter a numeric dollar value')"
+                    oninput="setCustomValidity('')"
                     class="form-control"
                     id="price"
                     name="asking_price"
