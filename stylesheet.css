@@ -4,7 +4,8 @@ h3,
 h4,
 h5,
 h6,
-button {
+button,
+p.standard {
   font-family: "Roboto", sans-serif;
 }
 
@@ -28,8 +29,28 @@ h2 {
   font-weight: 700;
 }
 
+h4 + a {
+  font-size: 1.125rem;
+}
+
 p {
   font-size: 1.125rem;
+}
+
+p.standard {
+  color: rgb(0, 0, 0, 0.8);
+}
+
+a {
+  color: #1588ff !important;
+}
+
+a:hover {
+  color: #0056b3 !important;
+}
+
+nav > a {
+  font-size: 1.25rem;
 }
 
 footer > p {
@@ -40,7 +61,7 @@ button > strong {
   font-size: 1.25rem;
 }
 
-.container {
+.container.container-primary {
   min-height: calc(100vh - 70px - 3rem);
 }
 
@@ -76,7 +97,9 @@ img.flip {
 }
 
 .footer {
+  position: "fixed";
   height: 40px;
+  bottom: 0;
 }
 
 a[href^="tel"] {
