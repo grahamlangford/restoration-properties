@@ -41,16 +41,8 @@ p.standard {
   color: rgb(0, 0, 0, 0.8);
 }
 
-a {
-  color: #1588ff !important;
-}
-
-a:hover {
-  color: #0056b3 !important;
-}
-
 nav > a {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 footer > p {
@@ -61,7 +53,7 @@ button > strong {
   font-size: 1.25rem;
 }
 
-.container.container-primary {
+.container-primary {
   min-height: calc(100vh - 70px - 3rem);
 }
 
@@ -103,6 +95,19 @@ img.flip {
 }
 
 a[href^="tel"] {
-  color: inherit;
+  color: #1588ff !important;
   text-decoration: none;
+}
+
+strong a[href^="tel"] {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+a {
+  color: #1588ff !important;
+}
+
+a:hover {
+  color: #0056b3 !important;
 }
