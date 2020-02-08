@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Please review our privacy policy. We are committed to protecting your privacy and will never sell your information."
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="media/fav/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="media/fav/favicon-16x16.png"
+      sizes="16x16"
+    />
+
+    <title>Investors | Restoration Properties</title>
+  </head>
+
+  <body>
+    <header class="fixed-top bg-primary d-inline text-center">
+      <a
+        href="https://www.facebook.com/RestorationProperties"
+        class="float-left py-3 pl-2 pr-2 p-sm-1"
+        target="_blank"
+        ><img src="media/facebook.png" alt="facebook logo"
+      /></a>
+      <h3 class="text-white mt-2 mb-1 ml-0 mr-1 mb-sm-2">
+        Call <strong><a href="tel:9012456010">(901) 245-6010</a></strong> for a
+        fair cash offer
+      </h3>
+    </header>
+
+    <div class="container container-primary mt-5 pt-5 pt-sm-2 pt-md-0">
+      <a href="index.html"
+        ><img
+          src="media/rp_logo.png"
+          class="img-fluid mx-auto d-block"
+          alt="Restoration Properties Logo"
+      /></a>
+      <h1 class="text-primary text-center">
+        Investors
+      </h1>
+
+      <h2 class="mt-5 text-center">
+        Fill out the form below to start receiving deals that match your
+        investing criteria
+      </h2>
+
+      <div class="bg-light p-4 border border-primary rounded shadow">
+        <form
+          action="https://formspree.io/info@restorationproperties.net"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="Investors: sign up for deal alerts"
+          />
+
+          <input type="text" name="_gotcha" class="d-none" />
+
+          <div class="form-row">
+            <div class="form-group col-12 col-md-6 col-lg-4">
+              <label for="name">Name*</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Enter name"
+                required
+              />
+            </div>
+
+            <div class="form-group col-12 col-md-6 col-lg-4">
+              <label for="email">Email*</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="_replyto"
+                aria-describedby="emailHelp"
+                placeholder="Your email"
+                required
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+
+            <div class="form-group col-12 col-md-6 col-lg-4">
+              <label for="phone">Phone*</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                name="phone_number"
+                placeholder="Enter phone number"
+                required
+              />
+            </div>
+
+            <div class="form-group col-12 col-md-6 col-lg-6">
+              <label for="company">Company Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="company"
+                name="company_name"
+                placeholder="Company name"
+              />
+            </div>
+
+            <div class="form-group col-12 col-lg-6">
+              <label for="property_interest"
+                >What type of properties are you interested in?</label
+              >
+              <select
+                class="form-control"
+                id="property_interest"
+                name="property_interest"
+              >
+                <option selected disabled>Select an option</option>
+                <option>Single Family</option>
+                <option>Multi Family</option>
+                <option>Condos</option>
+                <option>Vacant Lots</option>
+                <option>Commercial Unimproved</option>
+                <option>Commercial Improved</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="location_interest"
+              >What cities/zip codes interest you?</label
+            >
+            <textarea
+              class="form-control"
+              id="location_interest"
+              rows="4"
+              name="location_interest"
+            ></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-12 col-md-6">
+              <label for="budget">What is your maximum budget?</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">$</div>
+                </div>
+                <input
+                  type="tel"
+                  pattern="^\$?(\d+|\d{1,3}(,\d{3})*)(\.\d{2})?$"
+                  oninvalid="this.setCustomValidity('Please enter a numeric dollar value')"
+                  oninput="setCustomValidity('')"
+                  class="form-control"
+                  id="budget"
+                  name="max_budget"
+                />
+              </div>
+            </div>
+
+            <div class="form-group col-12 col-md-6">
+              <label for="funding">How will you be funding your deals?</label>
+              <select class="form-control" id="funding" name="funding">
+                <option selected disabled>Select an option</option>
+                <option>Cash</option>
+                <option>Hard Money Loan</option>
+                <option>Private Money Loan</option>
+                <option>Bank or Conventional Loan</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <fieldset class="form-group col-12 col-md-6">
+              <legend class="col-form-label pt-0">
+                Do you already have financing in place?
+              </legend>
+
+              <div class="row">
+                <div class="col-sm-10">
+                  <div class="form-check form-check-inline ml-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="financing_in_place"
+                      id="financingYes"
+                      value="Yes"
+                    />
+                    <label class="form-check-label" for="financingYes">
+                      Yes
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline ml-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="financing_in_place"
+                      id="financingNo"
+                      value="No"
+                    />
+                    <label class="form-check-label" for="financingNo">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-group col-12 col-md-6">
+              <label for="occupation_preference"
+                >Do you prefer vacant or tenant-occupied properties?</label
+              >
+              <select
+                class="form-control"
+                id="occupation_preference"
+                name="occupation_preference"
+              >
+                <option selected disabled>Select an option</option>
+                <option>Vacant</option>
+                <option>Tenant-occupied</option>
+                <option>Doesn't matter</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="other_info">Anything else we should know?</label>
+            <textarea
+              class="form-control"
+              id="other_info"
+              rows="4"
+              name="other_info"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary btn-block text-uppercase mt-lg-4"
+          >
+            <strong>Get my offer</strong>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="footer">
+        <div class="row text-center">
+          <div class="col-12 col-lg-5 w-100 mt-2 mt-md-3 ml-md-n4">
+            <nav class="nav justify-content-center justify-content-lg-start">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="investors.html">Investors</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </nav>
+          </div>
+          <div class="col-12 col-lg-7">
+            <p class="text-lg-right mt-1 mt-md-4">
+              &copy; 2019 RestorationProperties.net&nbsp;&nbsp;&nbsp;All Rights
+              Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
