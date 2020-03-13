@@ -53,8 +53,18 @@ button > strong {
   font-size: 1.25rem;
 }
 
+.investors-subtitle {
+  font-size: 1.75rem;
+}
+
 .container-primary {
   min-height: calc(100vh - 70px - 3rem);
+}
+
+@media (min-width: 992px) {
+  .container-investors {
+    max-width: 720px;
+  }
 }
 
 .text-primary {
